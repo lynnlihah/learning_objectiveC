@@ -9,18 +9,27 @@
 
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
+#import "Calculator.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
+        Calculator *deskCalc = [[Calculator alloc] init];
+        
+        [deskCalc setAccumulator:100.0];
+        [deskCalc add: 200.];
+        [deskCalc divide: 15.0];
+        [deskCalc substract: 10.];
+        [deskCalc multiply: 5];
+        NSLog(@"The result is %g", [deskCalc accumulator]);
 //        NSLog(@"Hello, World!");
         // insert code here...
-        Fraction * fraction = [[Fraction alloc]init];
-        [fraction setNumerator:10];
-        NSLog(@"numerator is %d", [fraction numerator]);
-        
-        fraction.numerator = 20;
-        NSLog(@"numerator is %d", fraction.numerator);
+//        Fraction * fraction = [[Fraction alloc]init];
+//        [fraction setNumerator:10];
+//        NSLog(@"numerator is %d", [fraction numerator]);
+//        
+//        fraction.numerator = 20;
+//        NSLog(@"numerator is %d", fraction.numerator);
     }
     return 0;
 }
