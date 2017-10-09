@@ -12,8 +12,8 @@
 #import "Calculator.h"
 #import "BaseGrammer.h"
 
-void callFractionClass();
-void callCalculationClass();
+void callFractionClass(void);
+void callCalculationClass(void);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -26,8 +26,8 @@ int main(int argc, const char * argv[]) {
         BaseGrammer *selstructure = [[BaseGrammer alloc] init];
         [selstructure if_structure: n];
         
-//        callFractionClass();
-//        callCalculationClass();
+        callFractionClass();
+        callCalculationClass();
     }
     return 0;
 }
