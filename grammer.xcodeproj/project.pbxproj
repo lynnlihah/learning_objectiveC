@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		443B86951F42A18400EB56FD /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B86941F42A18400EB56FD /* Fraction.m */; };
 		444737F01F1F0D4C00DC8151 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737EF1F1F0D4C00DC8151 /* main.m */; };
+		C9EBB2721F8B6EB4004DA077 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBB2711F8B6EB4004DA077 /* Calculator.m */; };
+		C9EBB2761F8B7281004DA077 /* BaseGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBB2751F8B7281004DA077 /* BaseGrammer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		443B86941F42A18400EB56FD /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		444737EC1F1F0D4C00DC8151 /* grammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = grammer; sourceTree = BUILT_PRODUCTS_DIR; };
 		444737EF1F1F0D4C00DC8151 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9EBB2701F8B6EB4004DA077 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		C9EBB2711F8B6EB4004DA077 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		C9EBB2741F8B725F004DA077 /* BaseGrammer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseGrammer.h; sourceTree = "<group>"; };
+		C9EBB2751F8B7281004DA077 /* BaseGrammer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseGrammer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,13 @@
 		444737EE1F1F0D4C00DC8151 /* grammer */ = {
 			isa = PBXGroup;
 			children = (
+				C9EBB2701F8B6EB4004DA077 /* Calculator.h */,
+				C9EBB2711F8B6EB4004DA077 /* Calculator.m */,
 				444737EF1F1F0D4C00DC8151 /* main.m */,
 				443B86931F42A13500EB56FD /* Fraction.h */,
 				443B86941F42A18400EB56FD /* Fraction.m */,
+				C9EBB2741F8B725F004DA077 /* BaseGrammer.h */,
+				C9EBB2751F8B7281004DA077 /* BaseGrammer.m */,
 			);
 			path = grammer;
 			sourceTree = "<group>";
@@ -93,7 +103,7 @@
 		444737E41F1F0D4B00DC8151 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = temp;
 				TargetAttributes = {
 					444737EB1F1F0D4B00DC8151 = {
@@ -124,7 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EBB2721F8B6EB4004DA077 /* Calculator.m in Sources */,
 				444737F01F1F0D4C00DC8151 /* main.m in Sources */,
+				C9EBB2761F8B7281004DA077 /* BaseGrammer.m in Sources */,
 				443B86951F42A18400EB56FD /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +153,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -149,7 +163,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -188,7 +206,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -196,7 +216,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
