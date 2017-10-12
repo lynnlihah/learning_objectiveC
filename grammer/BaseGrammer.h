@@ -15,7 +15,7 @@
 
 //selection structure
 -(void) if_structure:(int)number;
-
+-(void) switch_structure:(int)number;
 @end
 
 #endif /* BaseGrammer_h */

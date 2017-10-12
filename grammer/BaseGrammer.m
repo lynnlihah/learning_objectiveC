@@ -11,11 +11,31 @@
 @implementation BaseGrammer
 
 -(void) if_structure : (int) number {
+    int sign;
     if (number < 0 )
-        number = - number;
+        sign = -1;
+    else if (number == 0)
+        sign = 0;
     else
-        NSLog(@"input number > 0");
+        sign = 1;
         
-    NSLog(@"The absolute value is %i", number);
+    NSLog(@"Sign = %i", sign);
 }
+
+-(void) switch_structure:(int)number{
+    int sign;
+    switch (number) {
+        case 1:
+            sign = 1;
+            break;
+        case 0:
+            sign = 0;
+            break;
+        default:
+            sign = -1;
+            break;
+    }
+    NSLog(@"Sign = %i", sign);
+}
+
 @end
