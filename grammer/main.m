@@ -1,7 +1,7 @@
 //
 //  main.m
 //  grammer
-//
+//  
 //  Created by li on 2017/7/19.
 //  Copyright © 2017年 temp. All rights reserved.
 
@@ -12,7 +12,7 @@
 //#import "Rectangle.h"
 #import "Square.h"
 #import "XYPoint.h"
-
+#import "ClassB.h"
 //first try
 void callFractionClass(void);
 void callCalculationClass(void);
@@ -20,6 +20,10 @@ void callCalculationClass(void);
 void callBaseGrammerClass(void);
 // class
 void callSubCalss(void);
+void callRewriteClass(void);
+void callDynamicBind(void);
+//Exception
+void callManageException(void);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -28,8 +32,10 @@ int main(int argc, const char * argv[]) {
 //        callFractionClass();
 //        callCalculationClass();
 //        callBaseGrammerClass();
-        callSubCalss();
-        //page 171
+//        callSubCalss();
+//        callRewriteClass();
+        callDynamicBind();
+        //page 198
     }
     return 0;
 }
@@ -83,4 +89,33 @@ void callSubCalss(){
     [mySquare setSide: 5];
     NSLog(@"Square: s = %i", [mySquare side]);
     NSLog(@"Area = %i, Perimeter = %i", [mySquare area], [mySquare perimeter]);
+}
+
+void callRewriteClass(){
+    ClassA *a = [[ClassA alloc] init];
+    ClassB *b = [[ClassB alloc] init];
+    [a initVar]; //使用ClassA的方法
+//    [a printVar]; classA中无此方法，不能调用， 可以强转调用
+    [b initVar]; // 使用B中覆盖的方法
+    [b printVar]; // 显示x的值
+}
+
+void callDynamicBind(){
+    // 动态绑定： id 对象类型可以用来保存程序中任何类型的对象
+    // 注意：编译时和运行时
+    id dataValue;
+    Fraction *f1 = [[Fraction alloc] init];
+    dataValue = f1;
+    [dataValue print]; //调用 Fraction 的方法 print
+}
+void callManageException(){
+    //@throw
+    //@finally
+    @try{
+        
+    }
+    @catch(NSException *exception){
+        
+    }
+    
 }

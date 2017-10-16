@@ -12,6 +12,8 @@
 		C96D1DE61F8F0F1500B19F37 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = C96D1DE51F8F0F1500B19F37 /* Rectangle.m */; };
 		C96D1DE91F8F11AE00B19F37 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = C96D1DE81F8F11AE00B19F37 /* Square.m */; };
 		C96D1DEC1F8F147400B19F37 /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C96D1DEB1F8F147400B19F37 /* XYPoint.m */; };
+		C9946E9C1F94586900154CD2 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = C9946E9B1F94586900154CD2 /* ClassA.m */; };
+		C9946E9F1F94587700154CD2 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = C9946E9E1F94587700154CD2 /* ClassB.m */; };
 		C9EBB2721F8B6EB4004DA077 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBB2711F8B6EB4004DA077 /* Calculator.m */; };
 		C9EBB2761F8B7281004DA077 /* BaseGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBB2751F8B7281004DA077 /* BaseGrammer.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,10 @@
 		C96D1DE81F8F11AE00B19F37 /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 		C96D1DEA1F8F147400B19F37 /* XYPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
 		C96D1DEB1F8F147400B19F37 /* XYPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
+		C9946E9A1F94586900154CD2 /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		C9946E9B1F94586900154CD2 /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		C9946E9D1F94587700154CD2 /* ClassB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		C9946E9E1F94587700154CD2 /* ClassB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
 		C9EBB2701F8B6EB4004DA077 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		C9EBB2711F8B6EB4004DA077 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		C9EBB2741F8B725F004DA077 /* BaseGrammer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseGrammer.h; sourceTree = "<group>"; };
@@ -88,6 +94,10 @@
 				C96D1DE81F8F11AE00B19F37 /* Square.m */,
 				C96D1DEA1F8F147400B19F37 /* XYPoint.h */,
 				C96D1DEB1F8F147400B19F37 /* XYPoint.m */,
+				C9946E9A1F94586900154CD2 /* ClassA.h */,
+				C9946E9B1F94586900154CD2 /* ClassA.m */,
+				C9946E9D1F94587700154CD2 /* ClassB.h */,
+				C9946E9E1F94587700154CD2 /* ClassB.m */,
 			);
 			path = grammer;
 			sourceTree = "<group>";
@@ -151,6 +161,8 @@
 			files = (
 				C96D1DE91F8F11AE00B19F37 /* Square.m in Sources */,
 				C9EBB2721F8B6EB4004DA077 /* Calculator.m in Sources */,
+				C9946E9C1F94586900154CD2 /* ClassA.m in Sources */,
+				C9946E9F1F94587700154CD2 /* ClassB.m in Sources */,
 				444737F01F1F0D4C00DC8151 /* main.m in Sources */,
 				C96D1DEC1F8F147400B19F37 /* XYPoint.m in Sources */,
 				C9EBB2761F8B7281004DA077 /* BaseGrammer.m in Sources */,
