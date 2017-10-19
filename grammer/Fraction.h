@@ -20,7 +20,11 @@
 -(void) print;
 //多参数函数
 -(void)initSetNum:(int) n over:(int) d;
+//覆写init方法
 -(id)init;
+//多个初始化方法
+-(Fraction *) initWith:(int) n over:(int) d;
+    
 @end
 
 

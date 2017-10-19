@@ -29,25 +29,40 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
-//        callFractionClass();
+        callFractionClass();
 //        callCalculationClass();
 //        callBaseGrammerClass();
 //        callSubCalss();
 //        callRewriteClass();
         callDynamicBind();
-        //page 198
+        //page 224
     }
     return 0;
 }
 
 void callFractionClass()
 {
-    Fraction * fraction = [[Fraction alloc]init];
-    [fraction setNumerator:10];
-    NSLog(@"numerator is %d", [fraction numerator]);
-
-    fraction.numerator = 20;
-    NSLog(@"numerator is %d", fraction.numerator);
+//    Fraction * fraction = [[Fraction alloc]init];
+//    [fraction setNumerator:10];
+//    NSLog(@"numerator is %d", [fraction numerator]);
+//
+//    fraction.numerator = 20;
+//    NSLog(@"numerator is %d", fraction.numerator);
+    
+    //调用其他初始化函数
+    Fraction *a, *b;
+    a = [[Fraction alloc]initWith: 1 over: 3];
+    b = [[Fraction alloc]initWith: 3 over: 7];
+    
+    [a print];
+    [b print];
+    
+//    [a release]; // 报错
+//    [b release];
+    //输出结果：
+//    2017-10-19 09:29:28.823222+0800 grammer[882:14765] print 3 1
+//    2017-10-19 09:29:28.823253+0800 grammer[882:14765] print 7 3
+//    2017-10-19 09:29:28.823289+0800 grammer[882:14765] print 1 1 ？？？调用类init？为什么只调用一个？
 }
 
 void callCalculationClass()
