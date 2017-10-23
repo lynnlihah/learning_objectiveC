@@ -35,7 +35,7 @@ int main(int argc, const char * argv[]) {
 //        callSubCalss();
 //        callRewriteClass();
         callDynamicBind();
-        //page 224
+        //page 310
     }
     return 0;
 }

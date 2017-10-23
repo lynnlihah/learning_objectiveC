@@ -76,3 +76,41 @@
  return self;
  }
  */
+
+// 为Fraction添加分类
+@interface Fraction(MathOps)
+-(Fraction *) add: (Fraction *) f;
+-(Fraction *) mul: (Fraction *) f;
+-(Fraction *) sub: (Fraction *) f;
+-(Fraction *) div: (Fraction *) f;
+@end
+
+@implementation Fraction(MathOps)
+-(Fraction *) add: (Fraction *) f{
+    //a/b + c/d = ((a*d) + (b*c))/(b*d)
+    Fraction *result = [[Fraction alloc] init];
+    return result;
+};
+
+-(Fraction *) mul: (Fraction *) f{
+    Fraction *result = [[Fraction alloc] init];
+    return result;
+};
+
+-(Fraction *) sub: (Fraction *) f{
+    Fraction *result = [[Fraction alloc] init];
+    return result;
+};
+
+-(Fraction *) div: (Fraction *) f{
+    Fraction *result = [[Fraction alloc] init];
+    return result;
+};
+
+@end
+
+//@interface GraphicObject()// 括号内不填写分类名-类的扩展
+//@end
+
+//@protocol 协议 ： 多个类共享一个方法列表
+
