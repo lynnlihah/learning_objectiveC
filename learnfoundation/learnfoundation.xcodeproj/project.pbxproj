@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C968DB671F9ED4FF00862695 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C968DB661F9ED4FF00862695 /* main.m */; };
+		C987A4191FA08A5F00442CBA /* UseNSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = C987A4181FA08A5F00442CBA /* UseNSNumber.m */; };
+		C987A41C1FA08D6100442CBA /* UseNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = C987A41B1FA08D6100442CBA /* UseNSString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		C968DB631F9ED4FF00862695 /* learnfoundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = learnfoundation; sourceTree = BUILT_PRODUCTS_DIR; };
 		C968DB661F9ED4FF00862695 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C987A4171FA08A5F00442CBA /* UseNSNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseNSNumber.h; sourceTree = "<group>"; };
+		C987A4181FA08A5F00442CBA /* UseNSNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseNSNumber.m; sourceTree = "<group>"; };
+		C987A41A1FA08D6100442CBA /* UseNSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseNSString.h; sourceTree = "<group>"; };
+		C987A41B1FA08D6100442CBA /* UseNSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseNSString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				C968DB661F9ED4FF00862695 /* main.m */,
+				C987A4171FA08A5F00442CBA /* UseNSNumber.h */,
+				C987A4181FA08A5F00442CBA /* UseNSNumber.m */,
+				C987A41A1FA08D6100442CBA /* UseNSString.h */,
+				C987A41B1FA08D6100442CBA /* UseNSString.m */,
 			);
 			path = learnfoundation;
 			sourceTree = "<group>";
@@ -120,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C968DB671F9ED4FF00862695 /* main.m in Sources */,
+				C987A4191FA08A5F00442CBA /* UseNSNumber.m in Sources */,
+				C987A41C1FA08D6100442CBA /* UseNSString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
