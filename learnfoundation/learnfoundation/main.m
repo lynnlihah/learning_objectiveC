@@ -20,10 +20,12 @@ int main(int argc, const char * argv[]) {
         [num UesExample];
         
         UseNSString *str = [[UseNSString alloc]init];
-        [str UesExample];
+        [str UesExample_1];
+        [str UesExample_2];
+        [str UesExample_3];
        
         
-        //Page 321
+        //Page 334
     }
     return 0;
 }

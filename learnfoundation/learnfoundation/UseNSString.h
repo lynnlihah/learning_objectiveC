@@ -10,6 +10,8 @@
 
 @interface UseNSString : NSObject
 
--(void)UesExample;
+-(void)UesExample_1;
+-(void)UesExample_2;
+-(void)UesExample_3; // 可变字符串的基本操作
 
 @end
