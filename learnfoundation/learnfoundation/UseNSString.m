@@ -60,7 +60,6 @@
 
 -(void)UesExample_2{
     NSString *str1 = @"This is string A";
-    NSString *str2 = @"This is string B";
     NSString *res;
     NSRange subRange;
     

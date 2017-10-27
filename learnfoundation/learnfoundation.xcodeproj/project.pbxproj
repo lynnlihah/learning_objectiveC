@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C968DB671F9ED4FF00862695 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C968DB661F9ED4FF00862695 /* main.m */; };
+		C9211C831FA2C7A800B69C41 /* UseNSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C9211C7F1FA2C5F200B69C41 /* UseNSArray.m */; };
+		C9211C851FA2D27200B69C41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C968DB661F9ED4FF00862695 /* main.m */; };
+		C9211C8E1FA2E44100B69C41 /* AddressCard.m in Sources */ = {isa = PBXBuildFile; fileRef = C9211C8D1FA2E44100B69C41 /* AddressCard.m */; };
+		C9211C911FA2E47F00B69C41 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = C9211C901FA2E47F00B69C41 /* AddressBook.m */; };
 		C987A4191FA08A5F00442CBA /* UseNSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = C987A4181FA08A5F00442CBA /* UseNSNumber.m */; };
 		C987A41C1FA08D6100442CBA /* UseNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = C987A41B1FA08D6100442CBA /* UseNSString.m */; };
 /* End PBXBuildFile section */
@@ -25,6 +28,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C9211C7F1FA2C5F200B69C41 /* UseNSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseNSArray.m; sourceTree = "<group>"; };
+		C9211C801FA2C5F200B69C41 /* UseNSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseNSArray.h; sourceTree = "<group>"; };
+		C9211C8C1FA2E44100B69C41 /* AddressCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressCard.h; sourceTree = "<group>"; };
+		C9211C8D1FA2E44100B69C41 /* AddressCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressCard.m; sourceTree = "<group>"; };
+		C9211C8F1FA2E47F00B69C41 /* AddressBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBook.h; sourceTree = "<group>"; };
+		C9211C901FA2E47F00B69C41 /* AddressBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBook.m; sourceTree = "<group>"; };
 		C968DB631F9ED4FF00862695 /* learnfoundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = learnfoundation; sourceTree = BUILT_PRODUCTS_DIR; };
 		C968DB661F9ED4FF00862695 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C987A4171FA08A5F00442CBA /* UseNSNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseNSNumber.h; sourceTree = "<group>"; };
@@ -63,11 +72,17 @@
 		C968DB651F9ED4FF00862695 /* learnfoundation */ = {
 			isa = PBXGroup;
 			children = (
+				C9211C801FA2C5F200B69C41 /* UseNSArray.h */,
+				C9211C8C1FA2E44100B69C41 /* AddressCard.h */,
+				C9211C8D1FA2E44100B69C41 /* AddressCard.m */,
+				C9211C7F1FA2C5F200B69C41 /* UseNSArray.m */,
 				C968DB661F9ED4FF00862695 /* main.m */,
 				C987A4171FA08A5F00442CBA /* UseNSNumber.h */,
 				C987A4181FA08A5F00442CBA /* UseNSNumber.m */,
 				C987A41A1FA08D6100442CBA /* UseNSString.h */,
 				C987A41B1FA08D6100442CBA /* UseNSString.m */,
+				C9211C8F1FA2E47F00B69C41 /* AddressBook.h */,
+				C9211C901FA2E47F00B69C41 /* AddressBook.m */,
 			);
 			path = learnfoundation;
 			sourceTree = "<group>";
@@ -129,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C968DB671F9ED4FF00862695 /* main.m in Sources */,
+				C9211C851FA2D27200B69C41 /* main.m in Sources */,
+				C9211C831FA2C7A800B69C41 /* UseNSArray.m in Sources */,
 				C987A4191FA08A5F00442CBA /* UseNSNumber.m in Sources */,
+				C9211C911FA2E47F00B69C41 /* AddressBook.m in Sources */,
+				C9211C8E1FA2E44100B69C41 /* AddressCard.m in Sources */,
 				C987A41C1FA08D6100442CBA /* UseNSString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
