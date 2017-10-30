@@ -17,7 +17,9 @@
 
 -(id) initWithName: (NSString *)name; //设置初始数组，用于存放地址卡片，同时保存地址簿的名称
 -(void) addCard: (AddressCard *) theCard;
+-(void) removeCard: (AddressCard *) theCard;
 -(int) entries; //获取地址簿中卡片的数量
 -(void) list;   //显示地址簿的全部内容
 
+-(AddressCard *) lookup: (NSString*) theName;
 @end

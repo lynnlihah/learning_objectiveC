@@ -27,6 +27,10 @@
 -(void) addCard:(AddressCard *)theCard{
     [book addObject: theCard];
 }
+-(void) removeCard:(AddressCard *)theCard{
+    [book removeObjectIdenticalTo: theCard]; // 会删除和参数相同的所有对象
+}
+
 -(int) entries{
     return [book count];
 }
@@ -36,5 +40,11 @@
         NSLog(@"%-20s   %-32s", [theCard.name UTF8String],
               [theCard.email UTF8String]);
     NSLog(@"===============================================================");
+}
+-(AddressCard *) lookup: (NSString*) theName{
+    for(AddressCard *nextCard in book)
+        if([nextCard.name caseInsensitiveCompare: theName] == NSOrderedSame)
+            return nextCard;
+    return nil;
 }
 @end
