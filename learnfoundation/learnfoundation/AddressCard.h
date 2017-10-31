@@ -20,5 +20,6 @@
 // nonatomic 特性：表明不必单行在竞争条件下多个线程试图同时获取实例变量的情形
 -(void) setName: (NSString *)theName andEmail: (NSString*) theEmail;
 -(void) print;
-
+//比较方法
+-(NSComparisonResult) compareNames: (id)element;
 @end

@@ -22,4 +22,6 @@
 -(void) list;   //显示地址簿的全部内容
 
 -(AddressCard *) lookup: (NSString*) theName;
+-(void) sort; //排序方法
+
 @end

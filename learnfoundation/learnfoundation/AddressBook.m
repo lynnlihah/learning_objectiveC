@@ -47,4 +47,7 @@
             return nextCard;
     return nil;
 }
+-(void) sort{
+    [book sortUsingSelector:@selector(compareNames:)]; // 注意语法，需要在AddressCard 类中添加具体实现
+}
 @end

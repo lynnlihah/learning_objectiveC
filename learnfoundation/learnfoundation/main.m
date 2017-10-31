@@ -32,7 +32,7 @@ int main(int argc, const char * argv[]) {
 //        UseNSArray *arr = [[UseNSArray alloc]init];
 //        [arr UesExample];
         callAddressCard();
-        //Page 353
+        //Page 354
     }
     return 0;
 }
@@ -85,6 +85,10 @@ void callAddressCard(void){
     
     NSLog(@"Entries in address book after adding cards: %i",
           [myBook entries]);
+    [myBook list];
+    
+    // 排序后列出
+    [myBook sort];
     [myBook list];
     
     // 通过名字查找一个人
