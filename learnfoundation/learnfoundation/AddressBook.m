@@ -48,6 +48,20 @@
     return nil;
 }
 -(void) sort{
-    [book sortUsingSelector:@selector(compareNames:)]; // 注意语法，需要在AddressCard 类中添加具体实现
+//实现一
+//    [book sortUsingSelector:@selector(compareNames:)]; // 注意语法，需要在AddressCard 类中添加具体实现
+//实现二
+//    使用区块排序 - 能运行但没有提升性能
+//    [book sortUsingComparator:
+//     ^(id obj1, id obj2){
+//         return [obj1 compareNames: obj2];
+//     }];
+//    实现三
+//     性能提升版
+    [book sortUsingComparator:
+     ^(id obj1, id obj2){
+         return [[obj1 name] compare: [obj2 name]];
+     }];
 }
+
 @end

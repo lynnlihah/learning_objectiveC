@@ -14,8 +14,12 @@
 #import "UseNSArray.h"
 #import "AddressCard.h"
 #import "AddressBook.h"
+#import "UseNSDictionary.h"
 
 void callAddressCard(void);
+//知识点-NSValue-wrapping & unwrapping 即C语言中的结构转换为OC的对象
+//NSArray只能存储对象
+void callNSValue(void);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -31,7 +35,11 @@ int main(int argc, const char * argv[]) {
         
 //        UseNSArray *arr = [[UseNSArray alloc]init];
 //        [arr UesExample];
-        callAddressCard();
+//        callAddressCard();
+        
+        UseNSDictionary *dic = [[UseNSDictionary alloc] init];
+        [dic UseExample_1];
+        [dic UseExample_2];
         //Page 354
     }
     return 0;
@@ -108,6 +116,20 @@ void callAddressCard(void){
         [myCard print];
     else
         NSLog(@"Not found!");
+}
+
+void callNSValue(void){
+    CGPoint myPoint;// 框架自带，但是typedef定义的
+    NSValue *pointObj;
+    NSMutableArray *touchPoints=[NSMutableArray array];
     
-        
+    myPoint.x = 100.;
+    myPoint.y = 200.;
+    
+    pointObj = [NSValue valueWithPoint: myPoint];
+    [touchPoints addObject: pointObj];
+    
+    //从数组touchPoints中取出最后一个点并将它转化成CGPoint
+    myPoint = [[touchPoints lastObject] pointValue];
+    
 }
