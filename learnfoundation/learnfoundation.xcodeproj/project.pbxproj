@@ -14,6 +14,7 @@
 		C987A4191FA08A5F00442CBA /* UseNSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = C987A4181FA08A5F00442CBA /* UseNSNumber.m */; };
 		C987A41C1FA08D6100442CBA /* UseNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = C987A41B1FA08D6100442CBA /* UseNSString.m */; };
 		C9E800EA1FADC3A800401FDE /* UseNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E800E91FADC3A800401FDE /* UseNSDictionary.m */; };
+		C9ECC4831FB9D0F400C81845 /* UseNSSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ECC4821FB9D0F400C81845 /* UseNSSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		C987A41B1FA08D6100442CBA /* UseNSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseNSString.m; sourceTree = "<group>"; };
 		C9E800E81FADC3A800401FDE /* UseNSDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseNSDictionary.h; sourceTree = "<group>"; };
 		C9E800E91FADC3A800401FDE /* UseNSDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseNSDictionary.m; sourceTree = "<group>"; };
+		C9ECC4811FB9D0F400C81845 /* UseNSSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseNSSet.h; sourceTree = "<group>"; };
+		C9ECC4821FB9D0F400C81845 /* UseNSSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseNSSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				C9211C901FA2E47F00B69C41 /* AddressBook.m */,
 				C9E800E81FADC3A800401FDE /* UseNSDictionary.h */,
 				C9E800E91FADC3A800401FDE /* UseNSDictionary.m */,
+				C9ECC4811FB9D0F400C81845 /* UseNSSet.h */,
+				C9ECC4821FB9D0F400C81845 /* UseNSSet.m */,
 			);
 			path = learnfoundation;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				C9211C911FA2E47F00B69C41 /* AddressBook.m in Sources */,
 				C9211C8E1FA2E44100B69C41 /* AddressCard.m in Sources */,
 				C987A41C1FA08D6100442CBA /* UseNSString.m in Sources */,
+				C9ECC4831FB9D0F400C81845 /* UseNSSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
