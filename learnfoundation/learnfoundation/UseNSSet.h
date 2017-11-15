@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define INTOBJ(v) [NSNumber numberWithInteger: v]
+
 
 @interface NSSet (Printing)
 -(void) print;
@@ -17,11 +17,14 @@
 @implementation NSSet(Printing)
 -(void) print{
     printf("{");
-    for (NSNumber *element in self)
+    for (NSNumber *element in self){
         printf("%li",(long)[element integerValue]);
-    printf("}\n");
+        printf("\t");
+    }
+    printf("} \n");
 }
 @end
-@interface UseNSSet : NSObject
 
+@interface UseNSSet : NSObject
+-(void)UseExample;
 @end

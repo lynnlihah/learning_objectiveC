@@ -15,6 +15,7 @@
 #import "AddressCard.h"
 #import "AddressBook.h"
 #import "UseNSDictionary.h"
+#import "UseNSSet.h"
 
 void callAddressCard(void);
 //知识点-NSValue-wrapping & unwrapping 即C语言中的结构转换为OC的对象
@@ -37,10 +38,13 @@ int main(int argc, const char * argv[]) {
 //        [arr UesExample];
 //        callAddressCard();
         
-        UseNSDictionary *dic = [[UseNSDictionary alloc] init];
-        [dic UseExample_1];
-        [dic UseExample_2];
-        //Page 363
+//        UseNSDictionary *dic = [[UseNSDictionary alloc] init];
+//        [dic UseExample_1];
+//        [dic UseExample_2];
+        
+        UseNSSet *set = [[UseNSSet alloc]init];
+        [set UseExample];
+        //Page 367
     }
     return 0;
 }
